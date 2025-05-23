@@ -1,4 +1,4 @@
-/* pedrosa.css */
+
 
 body {
     font-family: 'Georgia', serif;
@@ -65,7 +65,7 @@ body {
     margin-bottom: 1.5rem;
   }
   
-  /* Responsive */
+  
   @media (max-width: 600px) {
     nav {
       flex-direction: column;
