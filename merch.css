@@ -1,0 +1,99 @@
+/* merch.css */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0; padding: 0;
+  }
+  
+  header, nav, main, footer {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-weight: 800;
+    color: #444;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    background: #666;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+  }
+  
+  nav button {
+    background-color: #888;
+    border: none;
+    color: white;
+    padding: 0.8rem 1.4rem;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav button:hover {
+    background-color: #555;
+  }
+  
+  nav button.active {
+    background-color: #222;
+  }
+  
+  main section {
+    display: none;
+    padding: 2rem;
+  }
+  
+  main section.active {
+    display: block;
+  }
+  
+  .product {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product img:hover {
+    transform: scale(1.05);
+  }
+  
+  .product h3 {
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .product p {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

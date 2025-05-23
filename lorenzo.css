@@ -1,0 +1,79 @@
+/* lorenzo.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a3151;
+    color: #f0f0f0;
+    margin: 0; padding: 0;
+  }
+  
+  header, nav, main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    text-align: center;
+    color: #f0f0f0;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  nav button {
+    background-color: #004080;
+    color: #d1eaff;
+    border: none;
+    padding: 0.8rem 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav button:hover {
+    background-color: #1a73e8;
+    color: white;
+  }
+  
+  nav button.active {
+    background-color: #1a73e8;
+    color: white;
+  }
+  
+  main section {
+    display: none;
+  }
+  
+  main section.active {
+    display: block;
+    background-color: #08315f;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    line-height: 1.6;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

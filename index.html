@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MotoGP Legends</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f4f4f4;
+    }
+
+    header {
+      background: #e50914;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+
+    #intro {
+      display: block;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    #intro h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 15px 25px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      color: #222;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ffa500;
+      transform: scale(1.05);
+    }
+
+    .volver-btn {
+      background: #00ffff;
+      color: #000;
+      margin-top: 30px;
+    }
+
+    main section {
+      display: none;
+      padding: 40px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    section h2 {
+      color: #ffcc00;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      margin-bottom: 20px;
+      color: #f0f0f0;
+    }
+
+    .product {
+      background: #1e2a38;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .product img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      color: #00ffff;
+      font-size: 1.3em;
+    }
+
+    .product p {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111;
+      color: #999;
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Mundo MotoGP: Historia y Leyendas
+  </header>
+
+  <section id="intro">
+    <h2>Bienvenido al Mundo MotoGP</h2>
+    <p>Elige una sección para comenzar:</p>
+    <nav>
+      <button data-target="historia">Historia MotoGP</button>
+      <button data-target="marquez">Marc Márquez</button>
+      <button data-target="lorenzo">Jorge Lorenzo</button>
+      <button data-target="pedrosa">Dani Pedrosa</button>
+      <button data-target="rossi">Valentino Rossi</button>
+      <button data-target="merch">Merchandising</button>
+    </nav>
+  </section>
+
+  <main>
+    <section id="historia">
+      <h2>Historia del Campeonato MotoGP</h2>
+      <img src="Imagenes/historia-motogp.jpg" alt="Historia del Campeonato MotoGP" />
+      <p>MotoGP es la categoría reina del motociclismo mundial. Surgió oficialmente en 2002, reemplazando la categoría de 500cc con motos de 990cc, luego 800cc y finalmente 1000cc actuales.</p>
+      <p>Desde Giacomo Agostini en los 70, pasando por Wayne Rainey, Mick Doohan, Rossi, Lorenzo, Stoner y Márquez, la historia ha estado marcada por intensas rivalidades y avances tecnológicos espectaculares.</p>
+      <p>Con circuitos legendarios como Mugello, Assen, Phillip Island y Jerez, MotoGP se ha convertido en un fenómeno global, transmitiendo emoción a millones de aficionados en todo el mundo.</p>
+      <button class="volver-btn">Volver al menú</button>
+    </section>
+
+    <section id="marquez" class="active">
+      <h2>Marc Márquez</h2>
+      <img src="Imagenes/marquez.jpg" alt="Marc Márquez pilotando en MotoGP" style="max-width:60%; border-radius:15px; margin: 0 auto 20px; display: block;" />
+    
+      <p>Marc Márquez nació en Cervera en 1993. Es uno de los pilotos más exitosos y espectaculares de la era moderna. Su debut en MotoGP en 2013 fue arrollador: ganó el campeonato en su primera temporada, siendo el más joven en lograrlo.</p>
+    
+      <p>🏆 Con Honda, consiguió seis títulos mundiales de MotoGP: <strong>2013, 2014, 2016, 2017, 2018 y 2019</strong>. Su estilo agresivo, su capacidad para frenar al límite y sus famosas "salvadas imposibles" lo convirtieron en ídolo y en un fenómeno técnico.</p>
+    
+      <div class="image-gallery">
+        <img src="Imagenes/mm-2013.jpg" alt="Marc Márquez Campeón 2013" />
+        <img src="Imagenes/mm-2014.jpg" alt="Marc Márquez Campeón 2014" />
+        <img src="Imagenes/mm-2016.jpg" alt="Marc Márquez Campeón 2016" />
+        <img src="Imagenes/mm-2017.jpg" alt="Marc Márquez Campeón 2017" />
+        <img src="Imagenes/mm-2018.jpg" alt="Marc Márquez Campeón 2018" />
+        <img src="Imagenes/mm-2019.jpg" alt="Marc Márquez Campeón 2019" />
+      </div>
+    
+      <p>🏁<strong>Victorias más memorables:</strong> Sachsenring 2018 (dominó bajo presión), Phillip Island 2015 (duelo épico con Lorenzo y Rossi), y Tailandia 2019 (consagración matemática en la última curva).</p>
+    
+      <div class="image-gallery">
+        <img src="Imagenes/memorable-sachsenring2018.jpg" alt="Victoria Sachsenring 2018" />
+        <img src="Imagenes/memorable-phillipisland2015.jpg" alt="Victoria Phillip Island 2015" />
+        <img src="Imagenes/memorable-tailandia2019.jpg" alt="Victoria Tailandia 2019" />
+      </div>
+    
+      <p>🔥<strong>Momentos icónicos:</strong> Su duelo con Rossi en Argentina 2015, su histórica salvada en Valencia 2017, y el dominio absoluto del año 2019 con 12 victorias y solo un abandono.</p>
+    
+      <div class="image-gallery">
+        <img src="Imagenes/iconico-argentina2015.jpg" alt="Duelo con Rossi Argentina 2015" />
+        <img src="Imagenes/iconico-valencia2017.jpg" alt="Salvada histórica Valencia 2017" />
+        <img src="Imagenes/iconico-2019dominio.jpg" alt="Dominio absoluto 2019" />
+      </div>
+    
+      <p>En 2023 abandonó Honda tras años difíciles por lesiones, y en 2024 pilotó para Gresini Ducati. En 2025 firmó con el equipo oficial Ducati Lenovo, iniciando una nueva etapa de ambición y gloria potencial.</p>
+    
+      <button class="volver-btn">Volver al menú</button>
+    </section>
+    
+    
+
+    <section id="lorenzo">
+      <h2>Jorge Lorenzo</h2>
+      <img src="Imagenes/lorenzo.jpg" alt="Jorge Lorenzo en pista" />
+      <p>Jorge Lorenzo, nacido en Palma de Mallorca (1987), fue uno de los pilotos más técnicos y precisos de su generación.</p>
+      <p>🏆 <strong>Títulos de MotoGP:</strong> 2010, 2012, 2015</p>
+      <div class="image-gallery">
+        <img src="Imagenes/jl-2010.jpg" alt="Jorge Lorenzo Campeón 2010" />
+        <img src="Imagenes/jl-2012.jpg" alt="Jorge Lorenzo Campeón 2012" />
+        <img src="Imagenes/jl-2015.jpg" alt="Jorge Lorenzo Campeón 2015" />
+      </div>
+      <p>🔥<strong>Victorias icónicas:</strong> Mugello 2009 (duelo con Rossi), Silverstone 2013 (con clavícula rota), y Valencia 2015 (final contra Rossi por el campeonato más polémico).</p>
+      <div class="image-gallery">
+        <img src="Imagenes/mugello2009.jpg" alt="Mugello 2009" />
+        <img src="Imagenes/sil2013.jpg" alt="Silverstone 2013" />
+        <img src="Imagenes/val2015.jpg" alt="Valencia 2015" />
+      </div>
+      <p>Con 47 victorias en MotoGP, su estilo suave y constante le dio grandes éxitos con Yamaha. También pilotó para Ducati y Honda antes de retirarse en 2019. Su rivalidad con Rossi definió una era.</p>
+      <div class="image-gallery">
+        <img src="Imagenes/yamaha.jpg" alt="Yamaha" />
+        <img src="Imagenes/ducati.jpg" alt="Ducati" />
+        <img src="Imagenes/hondalorenzo.jpg" alt="Honda" />
+      </div>
+      <button class="volver-btn">Volver al menú</button>
+    </section>
+
+    <section id="pedrosa">
+      <h2>Dani Pedrosa</h2>
+      <img src="Imagenes/pedrosa.jpg" alt="Dani Pedrosa en competición" />
+      <p>🏆 Dani Pedrosa, nacido en Sabadell (1985), es considerado uno de los mejores pilotos que nunca ganó el título de MotoGP, aunque fue campeón mundial en 125cc (2003) y 250cc (2004, 2005).</p>
+      <div class="image-gallery">
+        <img src="Imagenes/pedrosa1.jpg" alt="2003" />
+        <img src="Imagenes/pedrosa2.jpg" alt="2004" />
+        <img src="Imagenes/pedrosa3.jpg" alt="2005" />
+      </div>
+      <p>🔥 <strong>Mejores momentos:</strong> Victoria en Estoril 2006 en su año de debut, dominación en Valencia 2012 y su increíble regreso en Misano 2023 como wild card con KTM.</p>
+      <div class="image-gallery">
+        <img src="Imagenes/pedrosa4.jpg" alt="Estoril 2006" />
+        <img src="Imagenes/pedrosa5.jpg" alt="Valencia 2012" />
+        <img src="Imagenes/pedrosa6.jpg" alt="KTM 2023" />
+      </div>
+      <p>Con 31 victorias en MotoGP y más de 100 podios, fue vital en el desarrollo de motos para Honda y luego KTM. Su estilo fino y técnico lo hizo legendario entre pilotos y aficionados.</p>
+      <div class="image-gallery">
+        <img src="Imagenes/pedrosa9.jpg" alt="Honda 1" />
+        <img src="Imagenes/pedrosa7.jpg" alt="Honda 2" />
+        <img src="Imagenes/pedrosa8.jpg" alt="KTM" />
+      </div>
+      <button class="volver-btn">Volver al menú</button>
+    </section>
+
+    <section id="rossi">
+      <h2>Valentino Rossi</h2>
+      <img src="Imagenes/rossi.jpg" alt="Valentino Rossi durante una carrera" />
+      <p>Valentino Rossi, nacido en Tavullia (1979), es la leyenda viva del motociclismo. Con 9 títulos mundiales (7 en la categoría reina), es el piloto más popular de la historia.</p>
+      <p>🏆<strong>Títulos de MotoGP:</strong> 2001 (500cc), 2002, 2003, 2004, 2005, 2008, 2009</p>
+      <div class="image-gallery">
+        <img src="Imagenes/rossi1.jpg" alt="Campeón 2001" />
+        <img src="Imagenes/rossi2.jpg" alt="Campeón 2002" />
+        <img src="Imagenes/rossi3.jpg" alt="Campeón 2003" />
+        <img src="Imagenes/rossi4.jpg" alt="Campeón 2004" />
+        <img src="Imagenes/rossi5.jpg" alt="Campeón 2005" />
+        <img src="Imagenes/rossi6.jpg" alt="Campeón 2008" />
+        <img src="Imagenes/rossi7.jpg" alt="Campeón 2009" />
+        </div>
+      </div>
+    🔥<strong>Victorias legendarias:</strong> Welkom 2004 (primera con Yamaha), Laguna Seca 2008 (duelo con Stoner en el sacacorchos), y Assen 2017 (última victoria con Yamaha).</p>
+      <div class="image-gallery">
+      <img src="Imagenes/rossi8.jpg" alt="2004" />
+      <img src="Imagenes/rossi9.jpg" alt="2008" />
+      <img src="Imagenes/rossi10.jpg" alt="2017" />
+    </div>
+      <p>Su carisma, celebraciones únicas y longevidad lo hicieron ídolo mundial. Fundador del VR46 Racing Team, ha dejado huella en pista y fuera de ella. ¡Il Dottore es eterno!</p>
+      <div class="image-gallery">
+        <img src="Imagenes/rossi11.jpg" alt="Yamaha 1" />
+        <img src="Imagenes/rossi12.jpg" alt="Yamaha 2" />
+        <img src="Imagenes/rossi13.jpg" alt="VR46" />
+    </div>
+      <button class="volver-btn">Volver al menú</button>
+    </section>
+
+    <section id="merch">
+      <h2>Merchandising Oficial MotoGP</h2>
+      <p>Descubre productos oficiales de tus pilotos favoritos: camisetas, artículos coleccionables y más.</p>
+
+      <div class="product">
+        <img src="Imagenes/marquez-shirt.jpg" alt="Camiseta Marc Márquez" />
+        <h3>Camiseta Marc Márquez</h3>
+        <p>Precio: 45€</p>
+      </div>
+
+      <div class="product">
+        <img src="Imagenes/lorenzo-shirt.jpg" alt="Camiseta Jorge Lorenzo" />
+        <h3>Camiseta Jorge Lorenzo</h3>
+        <p>Precio: 40€</p>
+      </div>
+
+      <div class="product">
+        <img src="Imagenes/pedrosa-shirt.jpg" alt="Camiseta Dani Pedrosa" />
+        <h3>Camiseta Dani Pedrosa</h3>
+        <p>Precio: 38€</p>
+      </div>
+
+      <div class="product">
+        <img src="Imagenes/rossi-shirt.jpg" alt="Camiseta Valentino Rossi" />
+        <h3>Camiseta Valentino Rossi</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <button class="volver-btn">Volver al menú</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 MotoGP Legends. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('button[data-target]');
+    const sections = document.querySelectorAll('main section');
+    const intro = document.getElementById('intro');
+    const volverButtons = document.querySelectorAll('.volver-btn');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        intro.style.display = 'none';
+        sections.forEach(s => s.style.display = 'none');
+        document.getElementById(button.dataset.target).style.display = 'block';
+      });
+    });
+
+    volverButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        sections.forEach(s => s.style.display = 'none');
+        intro.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
