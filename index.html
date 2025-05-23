@@ -131,7 +131,6 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
   </style>
 </head>
 <body>
@@ -149,9 +148,8 @@
       <button data-target="rossi">Valentino Rossi</button>
       <button data-target="merch">Merchandising</button>
     </nav>
-    <img src="Imagenes/motogp.jpg" alt="MotoGP" class="fotogp" style="max-width:60%; border-radius:15px; margin: 0 auto 20px; display: block;" />
+    <img src="Imagenes/motogp.jpg" alt="MotoGP" style="max-width:60%; border-radius:15px; margin: 0 auto 20px; display: block;" />
   </section>
-
   <main>
     <section id="historia">
       <h2>Historia del Campeonato MotoGP</h2>
@@ -321,21 +319,24 @@
     const sections = document.querySelectorAll('main section');
     const intro = document.getElementById('intro');
     const volverButtons = document.querySelectorAll('.volver-btn');
-
+  
     buttons.forEach(button => {
       button.addEventListener('click', () => {
         intro.style.display = 'none';
         sections.forEach(s => s.style.display = 'none');
-        document.getElementById(button.dataset.target).style.display = 'block';
+        const targetSection = document.getElementById(button.dataset.target);
+        targetSection.style.display = 'block';
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
-
+  
     volverButtons.forEach(button => {
       button.addEventListener('click', () => {
         sections.forEach(s => s.style.display = 'none');
         intro.style.display = 'block';
+        intro.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
-  </script>
+  </script>  
 </body>
 </html>
