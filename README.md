@@ -1,63 +1,62 @@
-# Practica-Final
+# Práctica-Final
 
-## Descripció del projecte i tema escollit
+## Descripción del proyecto y tema elegido
 
-Aquest projecte és una pàgina web dedicada al món de MotoGP. He escollit aquest tema perquè últimament m'està interessant molt aquest esport. M'agrada veure les carreres, seguir els pilots i saber més sobre la seva història. Per això, he pensat que fer una web sobre això seria una bona manera d’aprendre i també de compartir el que vaig descobrint.
+Este proyecto es una página web dedicada al mundo de MotoGP. He elegido este tema porque últimamente me está interesando mucho este deporte. Me gusta ver las carreras, seguir a los pilotos y saber más sobre su historia. Por eso, he pensado que hacer una web sobre esto sería una buena manera de aprender y también de compartir lo que voy descubriendo.
 
-## Explicació del layout i estructura
+## Explicación del layout y estructura
 
-La web està dividida en diverses seccions:
+La web está dividida en varias secciones:
 
-- **Història de MotoGP**: On explico una mica la seva història
-- **Pilots**: He escollit alguns dels més famosos com Marc Márquez, Jorge Lorenzo, Dani Pedrosa i Valentino Rossi. Cada un té la seva pròpia pàgina amb informació i imatges.
-- **Merchandising**: Una secció com si fos una botiga amb alguns productes relacionats.
+- **Historia de MotoGP**: Donde explico un poco su historia
+- **Pilotos**: He elegido algunos de los más famosos como Marc Márquez, Jorge Lorenzo, Dani Pedrosa y Valentino Rossi. Cada uno tiene su propia página con información e imágenes.
+- **Merchandising**: Una sección como si fuera una tienda con algunos productos relacionados.
 
-Totes les seccions estan connectades amb un menú de navegació amb botons que permeten passar d'una secció a una altra de manera fàcil i ràpida.
+Todas las secciones están conectadas con un menú de navegación con botones que permiten pasar de una sección a otra de manera fácil y rápida.
 
-## Detalls sobre l'estil CSS i els efectes visuals
+## Detalles sobre el estilo CSS y los efectos visuales
 
-He creat diferents fitxers CSS per a cada secció. Cada pilot té el seu propi estil amb colors que el representen. Per exemple:
+He creado diferentes archivos CSS para cada sección. Cada piloto tiene su propio estilo con colores que lo representan. Por ejemplo:
 
-- **Marc Márquez** i **Jorge Lorenzo** tenen un fons degradat en tons vermells perquè són colors forts i agressius, com el seu estil de conducció.
-- **Valentino Rossi** té un estil més groc i taronja.
-- **Dani Pedrosa** té un estil més elegant i suau, amb fons grisos.
-- La secció de **Merchandising** sembla una botiga online, amb productes, imatges i efectes de zoom.
+- **Marc Márquez** y **Jorge Lorenzo** tienen un fondo degradado en tonos rojos porque son colores fuertes y agresivos, como su estilo de conducción.
+- **Valentino Rossi** tiene un estilo más amarillo y naranja.
+- **Dani Pedrosa** tiene un estilo más elegante y suave, con fondos grises.
+- La sección de **Merchandising** parece una tienda online, con productos, imágenes y efectos de zoom.
 
-També he utilitzat alguns efectes visuals com:
+También he utilizado algunos efectos visuales como:
 
-- **Responsive design** perquè es pugui veure bé en mòbils.
+- **Responsive design** para que se pueda ver bien en móviles.
 
-## Decisions de disseny i raonaments
+## Decisiones de diseño y razonamientos
 
-He volgut fer que cada pàgina tingui una personalitat pròpia, segons el pilot, però mantenint una estructura comuna per no perdre la coherència del projecte.
+He querido hacer que cada página tenga una personalidad propia, según el piloto, pero manteniendo una estructura común para no perder la coherencia del proyecto.
 
-Vaig decidir separar els CSS perquè sigui més fàcil entendre com funciona cada part i també per practicar com s’organitza un projecte més gran.
+Decidí separar los CSS para que sea más fácil entender cómo funciona cada parte y también para practicar cómo se organiza un proyecto más grande.
 
-He triat fer servir botons per navegar perquè és més visual i senzill que fer-ho amb enllaços normals. Això ajuda també a que sembli més com una app.
+He elegido usar botones para navegar porque es más visual y sencillo que hacerlo con enlaces normales. Esto también ayuda a que parezca más como una app.
 
-## Captures de pantalla
+## Capturas de pantalla
 
+### Página principal
 
-### Pàgina principal
+![Inicio](inicio.png)
 
-![Inici](inicio.png)
-
-### Secció Marc Márquez
+### Sección Marc Márquez
 
 ![Marc Márquez](marquez.png)
 
-### Secció Jorge Lorenzo
+### Sección Jorge Lorenzo
 
 ![Jorge Lorenzo](lorenzo.png)
 
-### Secció Dani Pedrosa
+### Sección Dani Pedrosa
 
 ![Dani Pedrosa](pedrosa.png)
 
-### Secció Valentino Rossi
+### Sección Valentino Rossi
 
 ![Valentino Rossi](rossi.png)
 
-### Secció Merchandising
+### Sección Merchandising
 
 ![Merchandising](merch.png)
